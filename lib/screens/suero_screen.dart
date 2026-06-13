@@ -6,6 +6,7 @@ class SueroScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text('Calcular suero')),
       body: Column(
         children: [
           TextField(
@@ -22,12 +23,10 @@ class SueroScreen extends StatelessWidget {
               border: OutlineInputBorder(),
             ),
           ),
-          TextField(
-            keyboardType: TextInputType.number,
-            decoration: InputDecoration(
-              label: Text('Factor de goteo'),
-              border: OutlineInputBorder(),
-            ),
+          FilledButton.icon(
+            onPressed: () => {},
+            label: Text('Calcular'),
+            icon: Icon(Icons.calculate),
           ),
         ],
       ),
