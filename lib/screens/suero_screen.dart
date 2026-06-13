@@ -56,7 +56,7 @@ String calculargotas() {
   if (tiempo <= 0) {
     return "Error: el tiempo debe ser mayor a 0";
   } else {
-    return '${volumen * factor}/${tiempo * 60}';
+    return '${(volumen * factor) / (tiempo * 60)}/min';
   }
 }
 
