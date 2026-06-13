@@ -1,3 +1,4 @@
+import 'package:evp_app/screens/vista_principal.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,6 +19,6 @@ class Cuerpo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return VistaPrincipal();
   }
 }
