@@ -1,4 +1,4 @@
-import 'package:evp_app/screens/vista_principal.dart';
+import 'package:evp_app/navigations/bottomnav.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,6 +19,6 @@ class Cuerpo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return VistaPrincipal();
+    return Scaffold(body: Bottomnav());
   }
 }
