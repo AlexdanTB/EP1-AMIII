@@ -10,6 +10,7 @@ class PresionScreen extends StatelessWidget {
       body: Column(
         children: [
           TextField(
+            controller: siscon,
             keyboardType: TextInputType.number,
             decoration: InputDecoration(
               label: Text('Presión sistólica'),
@@ -17,6 +18,7 @@ class PresionScreen extends StatelessWidget {
             ),
           ),
           TextField(
+            controller: diascon,
             keyboardType: TextInputType.number,
             decoration: InputDecoration(
               label: Text('Presión diastólica'),
