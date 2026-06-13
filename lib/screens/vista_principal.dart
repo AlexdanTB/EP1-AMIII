@@ -43,9 +43,22 @@ Widget lista2(context) {
           itemBuilder: (context, index) {
             final item = data[index];
             return (ListTile(
+              textColor: Color.fromRGBO(255, 255, 255, 1),
               tileColor: Color.fromRGBO(52, 52, 25, 0.5),
-              title: Text('${item['titulo']}'),
-              subtitle: Text('Precio: ${item['precio']}'),
+              title: Text(
+                '${item['titulo']}',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  backgroundColor: Color.fromRGBO(10, 10, 10, 1),
+                ),
+              ),
+              subtitle: Text(
+                'Precio: ${item['precio']}',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  backgroundColor: Color.fromRGBO(255, 31, 68, 1),
+                ),
+              ),
               leading: Image.network('${item['imagen']}'),
             ));
           },
