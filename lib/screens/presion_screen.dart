@@ -5,6 +5,25 @@ class PresionScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Text('Presion'));
+    return Scaffold(
+      body: Column(
+        children: [
+          TextField(
+            keyboardType: TextInputType.number,
+            decoration: InputDecoration(
+              label: Text('Presión sistólica'),
+              border: OutlineInputBorder(),
+            ),
+          ),
+          TextField(
+            keyboardType: TextInputType.number,
+            decoration: InputDecoration(
+              label: Text('Presión diastólica'),
+              border: OutlineInputBorder(),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }

@@ -5,6 +5,9 @@ class VistaPrincipal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Text('Home'));
+    return Scaffold(
+      appBar: AppBar(title: Text('Vista Principal')),
+      body: Image.asset("assets/images/tmnt.jpg"),
+    );
   }
 }
